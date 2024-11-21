@@ -1,0 +1,166 @@
+@import 'vars';
+@import 'mixins';
+
+
+
+%pointer {
+    cursor: pointer;
+}
+
+%firstSectionSmallCardSize {
+    width: 360px;
+    height: 260px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 100px;
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: $mainSiteWidth;
+    margin: 0 auto;
+}
+
+a {
+    @extend %pointer
+}
+
+button {
+    @extend %pointer
+}
+
+h1,
+p,
+button,
+a {
+    color: $headerTextColor;
+}
+
+.second-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+
+    &__text {
+        @include flex-column();
+    }
+
+    &__text h1 {
+        font-weight: 400;
+        font-size: 30px;
+        color: $headerTextColor;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+
+    &__text h3 {
+        font-weight: 400;
+        font-size: 14px;
+        color: #9f9f9f;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .second-section__card {
+        display: block;
+        position: relative;
+        background-color: $cardBgColor;
+        width: 360px;
+        height: 581px;
+    }
+
+    &__card-darkness {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: #3A3838;
+        width: 360px;
+        height: 420px;
+        opacity: 0.86;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__card-darkness button {
+        @include flex-center();
+        flex-direction: row;
+        color: $whiteTextColor;
+        background: rgba(58, 56, 56, 0.86);
+        font-weight: 400;
+        font-size: 14px;
+        border: 1px solid $whiteTextColor;
+        gap: 11px;
+        padding: 13px;
+    }
+
+    &__card:hover &__card-darkness {
+        display: flex;
+    }
+
+    &__card-text {
+        padding: 24px 16px;
+        @include flex-column();
+        gap: 16px;
+        color: $blackTextColor;
+        align-items: start;
+    }
+
+    &__card-text h2 {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    &__card-text p {
+        font-weight: 300;
+        font-size: 14px;
+        color: #5d5d5d;
+    }
+
+    &__price {
+        font-weight: 400;
+        font-size: 16px;
+        color: $selectSiteColor;
+    }
+}
+
+.browse-all-button {
+    @include flex-center();
+
+    &__button {
+        background: none;
+        font-size: 16px;
+        color: $selectSiteColor;
+        padding: 15px, 39px;
+        border: 1px solid $borderButtonColor;
+        margin-bottom: 60px;
+        margin-top: 48px;
+        width: 212px;
+        height: 48px;
+    }
+
+    &__button:hover {
+        color: $whiteTextColor;
+        background: $selectSiteColor;
+        stroke-width: 1px;
+        stroke: $borderButtonColor;
+    }
+}

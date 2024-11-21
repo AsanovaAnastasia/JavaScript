@@ -1,0 +1,141 @@
+button, a {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h1,
+p,
+button,
+a {
+  color: #222;
+}
+
+.second-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+.second-section__text {
+  display: flex;
+  flex-direction: column;
+}
+.second-section__text h1 {
+  font-weight: 400;
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.second-section__text h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9f9f9f;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.second-section .second-section__card {
+  display: block;
+  position: relative;
+  background-color: #f8f8f8;
+  width: 360px;
+  height: 581px;
+}
+.second-section__card-darkness {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: #3A3838;
+  width: 360px;
+  height: 420px;
+  opacity: 0.86;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.second-section__card-darkness button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  background: rgba(58, 56, 56, 0.86);
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid #fff;
+  gap: 11px;
+  padding: 13px;
+}
+.second-section__card:hover .second-section__card-darkness {
+  display: flex;
+}
+.second-section__card-text {
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #000;
+  align-items: start;
+}
+.second-section__card-text h2 {
+  font-size: 13px;
+  font-weight: 400;
+}
+.second-section__card-text p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #5d5d5d;
+}
+.second-section__price {
+  font-weight: 400;
+  font-size: 16px;
+  color: #f16d7f;
+}
+
+.browse-all-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-all-button__button {
+  background: none;
+  font-size: 16px;
+  color: #f16d7f;
+  padding: 15px, 39px;
+  border: 1px solid #FF6A6A;
+  margin-bottom: 60px;
+  margin-top: 48px;
+  width: 212px;
+  height: 48px;
+}
+.browse-all-button__button:hover {
+  color: #fff;
+  background: #f16d7f;
+  stroke-width: 1px;
+  stroke: #FF6A6A;
+}/*# sourceMappingURL=style.css.map */
