@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Products List</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            margin-bottom: 10px;
+            width: 150px;
+            height: 150px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 300;
+            font-size: 30px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-weight: 300;
+            font-size: 30px;
+
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .product {
+            width: 800px;
+            height: 700px;
+            padding: 16px;
+            margin: 40px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product__description {
+            font-weight: 300;
+            font-size: 30px;
+        }
+
+        .product__heading {
+            font-weight: 300;
+            font-size: 30px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1 class="product">Products List
+        <ul class="product__list" id="product-list">
+        </ul>
+    </h1>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
