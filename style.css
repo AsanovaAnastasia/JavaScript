@@ -1,0 +1,98 @@
+* {
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+}
+
+.listOfClasses {
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: start;
+    flex-direction: row;
+}
+
+.class {
+    width: 130px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #504e4e;
+
+    &:hover {
+        background-color: antiquewhite;
+    }
+}
+
+.className {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.description {
+    margin-top: 25px;
+    display: flex;
+    gap: 23px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+    font-size: 20px;
+    color: #504e4e;
+}
+
+.description-block {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    text-align: start;
+    align-items: start;
+    font-weight: 600;
+    font-size: 20px;
+    color: #504e4e;
+    width: 150px;
+}
+
+.no-placesText {
+    margin-top: 15px;
+    display: flex;
+    color: #000;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.button {
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    height: 40px;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 3px;
+
+    &:hover {
+        background-color: rgb(175, 238, 180);
+    }
+}
+.cancel-button:hover {
+    background-color: rgb(250, 144, 144);
+}
