@@ -1,0 +1,38 @@
+.container {
+    margin: 100px auto;
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+    opacity: 1.0;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+.button {
+    cursor: pointer;
+    border: 1px solid #f89ae8;
+    background-color: #f5c3ec;
+    width: 150px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 17%;
+}
